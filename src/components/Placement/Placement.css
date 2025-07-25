@@ -1,0 +1,90 @@
+.placement {
+  background: var(--container-color);
+  padding: 2.5rem;
+}
+
+.placement-container {
+  background-color: #121212;
+  color: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.placement-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.placement-description {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+.placement-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.stat h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #f1c40f;
+}
+
+.stat p {
+  font-size: 0.9rem;
+  color: #bbbbbb;
+}
+
+.placement-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.placement-logos img {
+  height: 60px;
+  border-radius: 10px;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: 0.6s ease;
+}
+
+.placement-logos img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.37rem;
+    --h3-font-size: 1.25rem;
+    --largest-font-size: 1.25rem;
+    --larger-font-size: 1.125rem;
+    --large-font-size: 1rem;
+    --normal-font-size: 0.9375rem;
+  }
+  .container {
+    max-width: 720px;
+  }
+  .btn {
+    padding: 0.75rem 1.25rem;
+  }
+}
